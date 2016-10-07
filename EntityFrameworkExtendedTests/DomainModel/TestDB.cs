@@ -4,12 +4,16 @@ namespace EntityFrameworkExtendedTests.DomainModel
     using System.Data.Entity;
     using System.ComponentModel.DataAnnotations.Schema;
     using System.Linq;
+    using System.Diagnostics;
 
     public partial class TestDB : DbContext
     {
         public TestDB()
             : base("name=TestDB")
         {
+#if DEBUG
+            this.Database.Log = s => { Debug.WriteLine(s); };
+#endif
         }
 
         public virtual DbSet<ContractAttachmentType> ContractAttachmentTypes { get; set; }
