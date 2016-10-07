@@ -48,6 +48,8 @@
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -56,6 +58,43 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DomainModel\Application.cs" />
+    <Compile Include="DomainModel\ApplicationAssesment.cs" />
+    <Compile Include="DomainModel\ApplicationAssesmentAnswer.cs" />
+    <Compile Include="DomainModel\ApplicationScreeningAnswer.cs" />
+    <Compile Include="DomainModel\ApplicationScreeningConclusion.cs" />
+    <Compile Include="DomainModel\ApplicationSubmission.cs" />
+    <Compile Include="DomainModel\AssesmentQuestion.cs" />
+    <Compile Include="DomainModel\Contract.cs" />
+    <Compile Include="DomainModel\ContractAttachment.cs" />
+    <Compile Include="DomainModel\ContractAttachmentType.cs" />
+    <Compile Include="DomainModel\ContractRating.cs" />
+    <Compile Include="DomainModel\Country.cs" />
+    <Compile Include="DomainModel\DACCRSCode.cs" />
+    <Compile Include="DomainModel\Grant.cs" />
+    <Compile Include="DomainModel\GrantAttachment.cs" />
+    <Compile Include="DomainModel\GrantImplementationStatus.cs" />
+    <Compile Include="DomainModel\GrantStage.cs" />
+    <Compile Include="DomainModel\GrantType.cs" />
+    <Compile Include="DomainModel\LoanProbabilitiesOfSigning.cs" />
+    <Compile Include="DomainModel\LoanStage.cs" />
+    <Compile Include="DomainModel\Organization.cs" />
+    <Compile Include="DomainModel\OrganizationType.cs" />
+    <Compile Include="DomainModel\Project.cs" />
+    <Compile Include="DomainModel\ProjectAttachment.cs" />
+    <Compile Include="DomainModel\ProjectCost.cs" />
+    <Compile Include="DomainModel\ProjectCostContributionType.cs" />
+    <Compile Include="DomainModel\ProjectFinance.cs" />
+    <Compile Include="DomainModel\ProjectFinancingType.cs" />
+    <Compile Include="DomainModel\ProjectSector.cs" />
+    <Compile Include="DomainModel\ProjectStage.cs" />
+    <Compile Include="DomainModel\RioMarker.cs" />
+    <Compile Include="DomainModel\Round.cs" />
+    <Compile Include="DomainModel\RoundStage.cs" />
+    <Compile Include="DomainModel\RoundType.cs" />
+    <Compile Include="DomainModel\ScreeningConclusionResult.cs" />
+    <Compile Include="DomainModel\ScreeningQuestion.cs" />
+    <Compile Include="DomainModel\TestDB.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
